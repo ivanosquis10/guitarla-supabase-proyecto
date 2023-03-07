@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Outfit', 'Roboto', sans-serif;
+}
+
+.resumen {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.curso {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.8),
+      rgb(0 0 0 / 0.7)
+    ),
+    url('https://msetvyvvrzdkntctbebj.supabase.co/storage/v1/object/sign/guitarras/cursos_bg.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJndWl0YXJyYXMvY3Vyc29zX2JnLmpwZyIsImlhdCI6MTY3Nzk2NDc5NSwiZXhwIjoxNzA5NTAwNzk1fQ.0eDxNCB2hwG-71orBaJH1hoy0juaTPNY9KfPFsPGV34&t=2023-03-04T21%3A19%3A56.612Z');
+  padding: 5rem 0;
+  background-position: center;
+  background-size: cover;
+}
