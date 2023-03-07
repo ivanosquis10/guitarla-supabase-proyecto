@@ -28,7 +28,7 @@ export default function Guitarra({ guitarra }) {
             <a
               onClick={() =>
                 toast.loading('Cargando...', {
-                  duration: 5000,
+                  duration: 1000,
                   position: 'top-right',
                 })
               }
