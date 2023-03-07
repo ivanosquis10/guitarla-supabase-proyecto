@@ -22,7 +22,7 @@ export default function Carrito({
 
   function notificacionCompra() {
     toast.success('Compra completada, muchas gracias!', {
-      icon: '🥳🥳',
+      icon: '🥳',
       position: 'top-right',
       id: 'clipboard',
       style: {
@@ -34,7 +34,8 @@ export default function Carrito({
   }
 
   function notificacionEliminar() {
-    toast.error('Eliminado del carrito😔', {
+    toast.error('Eliminado del carrito', {
+      icon: '😔',
       position: 'top-right',
       id: 'clipboard',
       style: {
