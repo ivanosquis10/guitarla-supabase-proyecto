@@ -9,8 +9,7 @@ function MyApp({ Component, pageProps }) {
 
   const [carrito, setCarrito] = useState(carritoLS)
   const [paginaLista, setPaginaLista] = useState(false)
-  const [loading, setLoading] = useState(false)
-
+  
   useEffect(() => {
     setPaginaLista(true)
   }, [])
