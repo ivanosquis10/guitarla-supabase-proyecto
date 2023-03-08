@@ -15,7 +15,7 @@ export default function Home({ dataGuitarras, dataPosts }) {
             Nuestra coleccion
           </h2>
 
-          <div className="grid gap-5 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 ">
+          <div className="grid gap-5 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 px-2">
             {dataGuitarras?.map((guitarra) => (
               <Guitarra key={guitarra.id} guitarra={guitarra} />
             ))}
@@ -43,10 +43,10 @@ export default function Home({ dataGuitarras, dataPosts }) {
         </section>
 
         <section className="container my-5 mx-auto">
-          <h2 className="tracking-widest text-center my-10 text-3xl uppercase font-bold  p-2">
+          <h2 className="tracking-widest text-center my-10 text-3xl uppercase font-bold p-2">
             Blog
           </h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 px-5 md:px-0">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 px-2 md:px-0">
             {dataPosts?.map((post) => (
               <Post key={post.id} post={post} />
             ))}

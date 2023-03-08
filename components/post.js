@@ -6,7 +6,7 @@ export default function Post({ post }) {
   const { titulo, image, descripcion, created_at, url } = post
   return (
     <article className="">
-      <div className="bg-white p-4 rounded-lg shadow hover:shadow-xl transition-all w-full h-full">
+      <div className="bg-white p-2 rounded-lg shadow hover:shadow-xl transition-all w-full h-full">
         <div>
           <Image src={image} width={500} height={100} alt={titulo} />
         </div>
@@ -15,15 +15,13 @@ export default function Post({ post }) {
             {titulo}
           </h3>
           <p className="text-gray-800 resumen">{descripcion}</p>
-          <div className="mt-4 flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <div>
-                <Link href={`/posts/${url}`} legacyBehavior>
-                  <a className="bg-slate-800 text-slate-100 py-3 px-5 rounded-md uppercase hover:bg-slate-700 hover:text-slate-100 ease-in-out duration-300">
-                    Leer post
-                  </a>
-                </Link>
-              </div>
+          <div className="mt-4 flex md:flex-col lg:flex-row items-center justify-between gap-4 py-2">
+            <div className="">
+              <Link href={`/posts/${url}`} legacyBehavior>
+                <a className="bg-slate-800 text-slate-100 py-3 px-5 rounded-md uppercase hover:bg-slate-700 hover:text-slate-100 ease-in-out duration-300">
+                  Leer
+                </a>
+              </Link>
             </div>
 
             <div>
