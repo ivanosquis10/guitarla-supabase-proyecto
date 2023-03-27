@@ -14,7 +14,6 @@ export default function Header() {
             height={40}
             src="../img/logo-guitar.svg"
             alt="logo guitarla"
-            priority
           />
         </Link>
 

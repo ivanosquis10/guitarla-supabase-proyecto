@@ -72,7 +72,7 @@ export default function Carrito({
                         width={250}
                         height={150}
                         alt={producto.nombre}
-                        priority
+                        priority={true}
                       />
                     </div>
 

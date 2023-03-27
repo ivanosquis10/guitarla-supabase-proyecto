@@ -13,7 +13,7 @@ export default function Guitarra({ guitarra }) {
           width={150}
           height={150}
           alt={`Guitarra ${nombre}`}
-          priority
+          priority={true}
         />
       </div>
 
